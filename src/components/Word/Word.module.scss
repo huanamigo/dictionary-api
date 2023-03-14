@@ -1,0 +1,22 @@
+@import '../../variables.scss';
+
+.mainWord {
+  font-weight: 800;
+  font-size: 28px;
+}
+
+.phonetic {
+  color: $mainColor;
+}
+
+.part {
+  font-family: monospace;
+}
+
+.secondary {
+  color: $secondary;
+}
+
+.bullet {
+  list-style: disc;
+}

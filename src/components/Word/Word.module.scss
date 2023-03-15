@@ -1,16 +1,25 @@
 @import '../../variables.scss';
 
+.container {
+  width: 100%;
+  position: relative;
+  * {
+    font-family: $font;
+  }
+}
+
 .mainWord {
   font-weight: 800;
-  font-size: 28px;
+  font-size: 2.5rem;
 }
 
 .phonetic {
+  font-size: 1.5rem;
   color: $mainColor;
 }
 
 .part {
-  font-family: monospace;
+  font-family: $weirdFont;
 }
 
 .secondary {
@@ -19,4 +28,21 @@
 
 .bullet {
   list-style: disc;
+}
+
+.synonym {
+  color: $mainColor;
+}
+
+.sound {
+  right: 0;
+  top: 0;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  border: none;
+  border-radius: 100%;
+  background-color: rgba($mainColor, 0.5);
+  color: $mainColor;
+  font-size: 40px;
 }

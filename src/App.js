@@ -2,20 +2,21 @@ import { useState } from 'react';
 import Navigation from './components/Navigation/Navigation';
 import Search from './components/Search/Search';
 import Word from './components/Word/Word';
+import styles from './App.module.scss';
 
 function App() {
-  const [word, changeWord] = useState([]);
+  const [words, changeWords] = useState([]);
   const [search, changeSearch] = useState('');
 
   return (
-    <div>
+    <div className={styles.body}>
       <Navigation></Navigation>
       <Search
-        changeWord={changeWord}
+        changeWords={changeWords}
         search={search}
         changeSearch={changeSearch}
       ></Search>
-      <Word word={word}></Word>
+      <Word words={words}></Word>
     </div>
   );
 }

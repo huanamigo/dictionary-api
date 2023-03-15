@@ -4,7 +4,9 @@ import styles from './Navigation.module.scss';
 const Navigation = () => {
   return (
     <nav className={styles.container}>
-      <div>logo</div>
+      <div>
+        <i className="fa-solid fa-book"></i>
+      </div>
       <div className={styles.right}>
         <div>dropdown font</div>
         <div>theme switcher</div>

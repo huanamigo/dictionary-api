@@ -1,2 +1,11 @@
-$mainColor: purple;
+@import url('https://fonts.googleapis.com/css2?family=Meow+Script&display=swap');
+
+:root {
+  --font: sans-serif;
+}
+
+$mainColor: #a943f7;
 $secondary: gray;
+$gray: #f4f5f5;
+$weirdFont: 'Meow Script', cursive;
+$font: var(--font);

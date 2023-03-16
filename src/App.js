@@ -7,6 +7,7 @@ import styles from './App.module.scss';
 function App() {
   const [words, changeWords] = useState([]);
   const [search, changeSearch] = useState('');
+  const [error, toggleError] = useState(false);
 
   return (
     <div className={styles.body}>
@@ -15,8 +16,9 @@ function App() {
         changeWords={changeWords}
         search={search}
         changeSearch={changeSearch}
+        toggleError={toggleError}
       ></Search>
-      <Word words={words}></Word>
+      <Word words={words} error={error}></Word>
     </div>
   );
 }

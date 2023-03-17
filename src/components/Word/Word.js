@@ -40,8 +40,6 @@ const Word = ({ words, error }) => {
           {checkSound()}
           {words?.map((word, i) => (
             <div key={i}>
-              {i > 0 ? <hr /> : null}
-
               {word.meanings.map((mean) => (
                 <div>
                   <p className={styles.part}>{mean.partOfSpeech}</p>

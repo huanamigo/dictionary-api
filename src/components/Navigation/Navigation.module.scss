@@ -1,7 +1,23 @@
+@import '../../variables.scss';
+
 .container {
   display: flex;
   justify-content: space-between;
   padding-top: 1.5rem;
+  margin: 20px 0;
+
+  select {
+    border: none;
+    background-color: $background;
+    color: $font-color;
+    font-size: 16px;
+    margin-right: 30px;
+  }
+
+  .logoContainer {
+    color: $logo-color;
+    font-size: 30px;
+  }
 }
 
 .right {

@@ -1,11 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Meow+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
 
 :root {
-  --font: sans-serif;
+  --font: monospace;
+  --background: black;
+  --font-color: white;
+  --logo-color: #a943f7;
+  --input-color: #1e1f1e;
 }
 
-$mainColor: #a943f7;
+$main-color: #a943f7;
 $secondary: gray;
-$gray: #f4f5f5;
-$weirdFont: 'Meow Script', cursive;
+$weird-font: 'Satisfy', cursive;
 $font: var(--font);
+$font-color: var(--font-color);
+$background: var(--background);
+$logo-color: var(--logo-color);
+$input-color: var(--input-color);

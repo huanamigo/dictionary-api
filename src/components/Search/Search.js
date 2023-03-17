@@ -12,25 +12,25 @@ const Search = ({ search, changeSearch, changeWords, toggleError }) => {
           return;
         }
         toggleError(false);
-        for (let i = 0; i < data.length; i++) {
-          console.log(data[i]);
-        }
+        // for (let i = 0; i < data.length; i++) {
+        //   console.log(data[i]);
+        // }
       });
   };
+
   const handleSearch = (e) => {
-    console.log(e.target.value);
-    changeSearch(e.target.value);
+    e.preventDefault();
+    fetchWord();
   };
+
   return (
     <div className={styles.container}>
-      <input
-        type="text"
-        onSubmit={fetchWord}
-        onChange={(e) => handleSearch(e)}
-      />
-      <button onClick={fetchWord}>
-        <i className="fa-solid fa-magnifying-glass"></i>
-      </button>
+      <form onSubmit={(e) => handleSearch(e)}>
+        <input type="text" onChange={(e) => changeSearch(e.target.value)} />
+        <button type="submit" onClick={handleSearch}>
+          <i className="fa-solid fa-magnifying-glass"></i>
+        </button>
+      </form>
     </div>
   );
 };

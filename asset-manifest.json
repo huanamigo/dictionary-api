@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/dictionary/static/css/main.a6607af2.css",
-    "main.js": "/dictionary/static/js/main.061c980e.js",
-    "index.html": "/dictionary/index.html",
-    "main.a6607af2.css.map": "/dictionary/static/css/main.a6607af2.css.map",
-    "main.061c980e.js.map": "/dictionary/static/js/main.061c980e.js.map"
+    "main.css": "/dictionary-api/static/css/main.a6607af2.css",
+    "main.js": "/dictionary-api/static/js/main.061c980e.js",
+    "index.html": "/dictionary-api/index.html",
+    "main.a6607af2.css.map": "/dictionary-api/static/css/main.a6607af2.css.map",
+    "main.061c980e.js.map": "/dictionary-api/static/js/main.061c980e.js.map"
   },
   "entrypoints": [
     "static/css/main.a6607af2.css",

@@ -38,15 +38,18 @@ const Navigation = () => {
           <option value="sans-serif">Sans Serif</option>
           <option value="monospace">Mono</option>
         </select>
-        <label className={styles.themeSwitch}>
+        <div className={styles.themeSwitch}>
           <input
             type="checkbox"
             checked={darkTheme}
             onChange={themeSwitch}
+            id="dark"
           ></input>
-          asdsad
-          <span className={styles.slider}></span>
-        </label>
+          <label htmlFor="dark">
+            <span className={styles.slider}></span>
+            <i className={`${styles.icon} fa-regular fa-moon`}></i>
+          </label>
+        </div>
       </div>
     </nav>
   );

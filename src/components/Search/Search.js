@@ -26,7 +26,11 @@ const Search = ({ search, changeSearch, changeWords, toggleError }) => {
   return (
     <div className={styles.container}>
       <form onSubmit={(e) => handleSearch(e)}>
-        <input type="text" onChange={(e) => changeSearch(e.target.value)} />
+        <input
+          placeholder="Search for any word"
+          type="text"
+          onChange={(e) => changeSearch(e.target.value)}
+        />
         <button type="submit" onClick={handleSearch}>
           <i className="fa-solid fa-magnifying-glass"></i>
         </button>
